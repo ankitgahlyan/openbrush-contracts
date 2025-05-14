@@ -15,15 +15,15 @@ include = ["Cargo.toml", "src/**/*.rs"]
 
 [dependencies]
 openbrush_lang_codegen = { version = "~4.0.0-beta.1", path = "../codegen", default-features = false }
-syn = "1"
-proc-macro2 = "1"
-synstructure = "0.12"
+syn = "2.0.101"
+proc-macro2 = "1.0.95"
+synstructure = "0.13.2"
 
 [dev-dependencies]
-ink = { version = "4.3.0", default-features = false}
+ink = { version = "5.1.1", default-features = false}
 
-scale = { package = "parity-scale-codec", version = "3", default-features = false, features = ["derive"] }
-scale-info = { version = "2.6", default-features = false, features = ["derive"] }
+scale = { package = "parity-scale-codec", version = "3.7.4", default-features = false, features = ["derive"] }
+scale-info = { version = "2.11.6", default-features = false, features = ["derive"] }
 
 openbrush = { package = "openbrush_lang", path = "..", default-features = false }
 

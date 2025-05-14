@@ -14,19 +14,19 @@ categories = ["no-std", "embedded"]
 include = ["Cargo.toml", "src/**/*.rs"]
 
 [dependencies]
-syn = { version = "1", features = ["parsing", "full", "visit", "extra-traits"] }
-quote = "1"
-proc-macro2 = "1"
-serde_json = "1.0.64"
+syn = { version = "2.0.101", features = ["parsing", "full", "visit", "extra-traits"] }
+quote = "1.0.40"
+proc-macro2 = "1.0.95"
+serde_json = "1.0.140"
 fs2 = "0.4.3"
-serde = { version = "1.0", features = ["derive"] }
-cargo_metadata = "0.13.1"
+serde = { version = "1.0.219", features = ["derive"] }
+cargo_metadata = "0.19.2"
 unwrap = "1.2.1"
 blake2 = "0.10.6"
-heck = "0.3.1"
-ink_ir = { version = "4.2.1", default-features = false }
-ink_primitives = { version = "4.2.1", default-features = false }
-synstructure = "0.12"
+heck = "0.5.0"
+ink_ir = { version = "5.1.1", default-features = false }
+ink_primitives = { version = "5.1.1", default-features = false }
+synstructure = "0.13.2"
 
 [lib]
 name = "openbrush_lang_codegen"
